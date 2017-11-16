@@ -14,29 +14,18 @@ using namespace std;
 
 int main(){
   vector<DigitalMedia*> medias;
-  cout << "Enter 'ADD' to Add Media" << endl;
-  cout << "Enter 'DELETE' to Delete an item" << endl;
-  cout << "Enter 'SEARCH' to Search for Objects in the Database" << endl;
-  cout << "Enter 'QUIT' to exit the program" << endl;
-  while(true) {
+  while (true){
+    cout << "Enter 'ADD' to Add Media" << endl;
+    cout << "Enter 'DELETE' to Delete an item" << endl;
+    cout << "Enter 'SEARCH' to Search for Objects in the Database" << endl;
+    cout << "Enter 'QUIT' to exit the program" << endl;
     char input[7];
-    /*
-      cout << "List all digital medias title and year " << endl;
-      int i;
-      for(i=0; i<medias.size(); i++){
-      cout << "NUMBER " << i << " :" <<endl;
-      cout << "Title: " << medias[i]->getTitle() << endl;
-      cout << "Year: " << medias[i]->getYear() << endl;
-      }
-      cout << endl << endl;
-    */
     cout << "Please Enter a command: "<<endl;
     cin.getline(input, 7);
-    
     if (strcmp(input, "ADD") == 0){
+      //get input that has all
       char mediaType[10];
       char *title = new char[150];
-      
       int year;
       //enter a new digital media information if they input ADD
       cout << "Please enter the Type of Media (VIDEOGAME, MOVIE, MUSIC):"<<endl;

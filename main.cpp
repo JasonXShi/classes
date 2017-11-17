@@ -186,7 +186,7 @@ int main(){
 	      ((VideoGame*)(*it))->displayInfo();
 	    }
 	    //confirm if the user wants to delete
-	    cout << "Do you wish to delete this? (Y,N)";
+	    cout << "Do you wish to delete this? (Enter 'Y' for yes or 'N' for no [without the '])";
 	    cin.getline(confirm, 2);
 		  //delete the digitalMedia (auto calls the deconstructor)
 	    if(strcmp(confirm, "Y")==0){

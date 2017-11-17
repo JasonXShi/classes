@@ -1,3 +1,4 @@
+//header guards
 #ifndef DIGITALMEDIA_H
 #define DIGITALMEDIA_H
 #include <cstring>
@@ -5,7 +6,7 @@
 class DigitalMedia{
 	public:
 	  DigitalMedia(char* newTitle, int newYear);
-		~DigitalMedia();
+	  virtual ~DigitalMedia();
 	  char* getTitle();
 	  int getYear();
 	  void displayInfo();

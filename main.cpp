@@ -96,7 +96,7 @@ int main(){
     } else if(strcmp(input, "SEARCH") == 0){
 	    //prompt for which method of searching
       cout << "Search by Title or Year? (Enter 'TITLE' or 'YEAR' [without the ']): " << endl;
-      char *searchField = new char[6];
+      char *searchField = new char[15];
       cin.getline(searchField, 6);
 	    //create iterator 
       vector<DigitalMedia*>::iterator it;
@@ -155,7 +155,6 @@ int main(){
 	cout << "Invalid Search Field" << endl;
 	continue;
       }
-      
     } else if(strcmp(input, "DELETE")==0){
 	    //allow them to choose to delete with the title or the year
       cout << "Delete by Title or Year? (Enter 'TITLE' or 'YEAR' [without the ']): " << endl;

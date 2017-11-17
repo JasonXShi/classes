@@ -23,9 +23,9 @@ void VideoGame::displayInfo(){
   cout << "Publisher: " << getPublisher() << endl;
   cout << "Rating: " << getRating() << endl;
 }
-//returning 3 for a videoGame
+//returning 0 for a videoGame
 int VideoGame::getType(){
-  return 3;
+  return 0;
 }
 //destructor for videogame, deletes the pointer of publisher
 VideoGame::~VideoGame(){

@@ -97,7 +97,7 @@ int main(){
 	    //prompt for which method of searching
       cout << "Search by Title or Year? (Enter 'TITLE' or 'YEAR' [without the ']): " << endl;
       char *searchField = new char[15];
-      cin.getline(searchField, 6);
+      cin.getline(searchField, 14);
 	    //create iterator 
       vector<DigitalMedia*>::iterator it;
       int count = 0;

@@ -22,6 +22,7 @@ int main(){
   vector<DigitalMedia*> medias;
   while (true){
 //display instructions
+cout << " " << endl;
     cout << "Enter 'ADD' to Add Media" << endl;
     cout << "Enter 'DELETE' to Delete an item" << endl;
     cout << "Enter 'SEARCH' to Search for Objects in the Database" << endl;

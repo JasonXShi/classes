@@ -15,7 +15,7 @@ char* DigitalMedia::getTitle(){
 int DigitalMedia::getYear(){
   return year;
 }
-//making deconstructor
+//making destructor
 DigitalMedia::~DigitalMedia() {
   delete []title;
 }

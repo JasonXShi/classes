@@ -110,7 +110,6 @@ int main(){
 	for(it = medias.begin(); it != medias.end(); it++) {
 		//if the title matches, call the displayInfo method to print the info
 	  if (strcmp((*it)->getTitle(), searchTitle)==0) {
-	    cout << (*it)->getType() << endl;
 	    switch((*it)->getType()) {
 	    case 1  : //movie
 	      ((Movie*)(*it))->displayInfo();

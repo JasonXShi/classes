@@ -5,7 +5,7 @@
 
 class DigitalMedia{
 	public:
-	//defining deconstructors, getters, and constructor.
+	//defining destructor, getters, and constructor.
 	//also other functions like displayInfo and getType
 	  DigitalMedia(char* newTitle, int newYear);
 	  virtual ~DigitalMedia();
